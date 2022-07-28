@@ -1,0 +1,16 @@
+.header_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_search input {
+  width: 500px;
+  border: 1px solid #e7e7e7;
+  padding: 14px 20px 10px;
+  font-size: 16px;
+}
+
+.header_search-icon {
+  margin-left: -50px;
+}
