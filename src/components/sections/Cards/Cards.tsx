@@ -1,4 +1,4 @@
-import './Cards.css';
+import s from './Cards.module.scss';
 
 interface ICardsProps {
   img: string;
@@ -17,8 +17,8 @@ const Cards: React.FC<ICardsProps> = ({
 }) => {
   return (
     <>
-      <div className="card">
-        <div className="card_img">
+      <div className={s.card}>
+        <div className={s.card_img}>
           <img src={img} alt="img" />
         </div>
         <h4 className="card_title">{title}</h4>
@@ -27,7 +27,7 @@ const Cards: React.FC<ICardsProps> = ({
 
           {publisher}
         </p>
-        <div className="card_price">{price}</div>
+        <div className={s.card_price}>{price}</div>
       </div>
     </>
   );

@@ -1,18 +1,19 @@
 import React from 'react';
-import './Subscribe.css';
+import { Button } from '../Button';
+import s from './Subscribe.module.scss';
 
 const Subscribe = () => {
   return (
     <>
-      <div className="subscribe">
-        <h3>Subscribe to Newsletter</h3>
-        <p>
+      <div className={s.subscribe}>
+        <h3 className={s.h3}>Subscribe to Newsletter</h3>
+        <p className={s.p}>
           Be the first to know about new IT books, upcoming releases, exclusive
           offers and more.
         </p>
-        <form action="">
-          <input type="text" placeholder="Your Email" />
-          <button>Subscribe</button>
+        <form action="" className={s.form}>
+          <input className={s.input} type="text" placeholder="Your Email" />
+          <Button text={'Subscribe'} />
         </form>
       </div>
     </>

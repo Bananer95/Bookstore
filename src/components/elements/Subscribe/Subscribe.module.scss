@@ -1,0 +1,38 @@
+.subscribe {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: left;
+  padding: 56px 64px;
+  height: 288px;
+  background: #f4eefd;
+  margin-bottom: 50px;
+  .h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: grey;
+    text-align: left;
+  }
+  .form {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    width: 992px;
+    align-items: center;
+    max-width: 992px;
+
+    .input {
+      width: 80%;
+      height: 30px;
+      border: 1px solid #e7e7e7;
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+  }
+}

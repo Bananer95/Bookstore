@@ -1,12 +1,12 @@
 import React from 'react';
 import { Navigation } from '../../../components/elements/navigation';
 import { Search } from '../../../components/elements/Search';
-import './Header.css';
+import s from './Header.module.scss';
 
 const Header = () => {
   return (
     <>
-      <div className="header">
+      <div className={s.header}>
         <h2>BookStore</h2>
         <Search />
         <Navigation />

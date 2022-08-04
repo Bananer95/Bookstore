@@ -1,0 +1,13 @@
+.h1 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 14px;
+  margin: 0 -15px;
+}

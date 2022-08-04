@@ -4,8 +4,9 @@ import { Subscribe } from '../../components/elements/Subscribe/Subscribe';
 import { Footer } from '../../layouts/components/footer/Footer';
 import books from '../../Data/Data';
 import { Cards } from '../../components/sections/Cards';
-import './Mainpage.css';
+import s from './Mainpage.module.scss';
 import { useState } from 'react';
+import { Row } from '../../components/elements/row';
 
 const booksFirstPage = books.slice(0, 12);
 const booksSecondPage = books.slice(12, 24);
@@ -25,7 +26,8 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      <div className="mainpage">
+      <h1 className={s.h1}>NEW RELEASES BOOKS</h1>
+      <div className={s.mainpage}>
         {page === 1
           ? booksFirstPage.map((book) => {
               return (
@@ -66,7 +68,7 @@ const MainPage = () => {
               );
             })
           : null}
-        <button onClick={handleChanger}> Next</button>
+        <Row />
       </div>
       <Subscribe />
       <Footer />

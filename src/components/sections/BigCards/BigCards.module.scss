@@ -1,0 +1,139 @@
+@mixin alignment {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bigcard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 70px;
+
+  .bigcard_title {
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .bigcard_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .bigcard_block_img {
+      position: relative;
+      width: 40%;
+
+      .bigcard_block_img img {
+        width: 544px;
+        height: 472px;
+      }
+    }
+
+    .bigcard_block_img button {
+      cursor: pointer;
+      position: absolute;
+      border: none;
+      background-color: rgba(10, 10, 10, 0.595);
+      top: 0;
+      right: 0;
+      padding-top: 5px;
+    }
+
+    .bigcard_block_details {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #e7e7e7;
+      width: 40%;
+      margin-bottom: 40px;
+
+      .bigcard_block_details_price {
+        text-align: center;
+        font-family: 'Bayon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+        margin: 40px 0 24px;
+      }
+
+      .bigcard_block_details_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        span {
+          font-family: 'Helios';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 32px;
+          color: #a8a8a8;
+        }
+
+        p {
+          font-family: 'Helios';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 32px;
+          color: #313037;
+          text-align: right;
+          margin: 0 0 0 20px;
+        }
+
+        .bigcard_block_details_text_author {
+          @include alignment;
+        }
+        .bigcard_block_details_text_publisher {
+          @include alignment;
+        }
+        .bigcard_block_details_text_language {
+          @include alignment;
+        }
+        .bigcard_block_details_text_format {
+          @include alignment;
+        }
+      }
+    }
+  }
+
+  .bigcard_block_description {
+    display: flex;
+    flex-direction: column;
+
+    .bigcard_block_description_title {
+      border-bottom: 1px solid #e7e7e7;
+    }
+
+    .bigcard_block_description_title h4 {
+      text-align: center;
+    }
+
+    .bigcard_block_description_text {
+      font-family: 'Helios';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: #313037;
+      text-align: left;
+    }
+  }
+
+  .social {
+    margin-top: 40px;
+  }
+
+  .social a {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}

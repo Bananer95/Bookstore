@@ -1,12 +1,12 @@
 import React from 'react';
-import './Search.css';
+import s from './Search.module.scss';
 
 const Search = () => {
   return (
     <>
-      <form className="header_search">
-        <input type={'text'} placeholder={'Search'}></input>
-        <span className="header_search-icon">
+      <form className={s.header_search}>
+        <input className={s.input} type={'text'} placeholder={'Search'}></input>
+        <span className={s.header_search_icon}>
           <svg
             className="svgIcon-use"
             width="28"
