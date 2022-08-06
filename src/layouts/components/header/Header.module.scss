@@ -9,9 +9,121 @@
   text-transform: uppercase;
   margin-bottom: 50px;
 
-  h2 {
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  .h2 {
     font-size: 36px;
     font-stretch: inherit;
     letter-spacing: 0;
+  }
+
+  .header_burger {
+    display: none;
+    align-items: center;
+
+    .header_burger_button {
+      position: relative;
+      border: none;
+      background-color: rgb(42, 42, 42);
+      width: 35px;
+      height: 4px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 10px;
+        left: 0;
+        width: 35px;
+        height: 4px;
+        background-color: rgb(42, 42, 42);
+      }
+
+      &::before {
+        content: '';
+        width: 35px;
+        height: 4px;
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        background-color: rgb(42, 42, 42);
+      }
+    }
+    .header_burger_button::after {
+    }
+  }
+}
+@media (max-width: 769px) {
+  .header {
+    margin-bottom: 25px;
+
+    .header_burger {
+      display: flex;
+    }
+
+    .header_content {
+      display: none;
+    }
+
+    .h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+.header_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(68, 68, 68, 0.623);
+
+  .header_menu_navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    .header_menu_navigation_contaner {
+      max-width: 287px;
+      margin: auto;
+
+      .header_menu_navigation_header_menu_navigation_contaner_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 104px;
+        border-bottom: 2px solid #e7e7e7;
+        margin-bottom: 40px;
+      }
+
+      .header_menu_navigation_header_menu_navigation_contaner_close {
+        display: flex;
+        background: none;
+        border: none;
+        align-content: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .header_menu {
+    .header_menu_navigation {
+      width: 100%;
+      overflow: hidden;
+
+      .header_menu_navigation_contaner {
+        max-width: 272px;
+      }
+    }
   }
 }

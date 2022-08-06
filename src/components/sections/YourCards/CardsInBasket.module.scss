@@ -1,0 +1,139 @@
+.card_in_basket {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dbdbdb;
+  max-height: 250px;
+
+  .card_in_basket_text_icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .card_in_basket_img {
+    max-height: 250px;
+  }
+
+  .card_in_basket_cancel {
+    border: none;
+    background: none;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+
+  .card_in_basket_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    padding: 0 32px;
+
+    .card_in_basket_text_information {
+      font-family: 'Helios';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #a8a8a8;
+    }
+
+    .card_in_basket_text_title {
+      font-family: 'Bebas Neue';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 15px 0;
+    }
+
+    .card_in_basket_text_counter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 168px;
+      align-items: center;
+    }
+
+    & button {
+      display: flex;
+      align-items: center;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    & p {
+      font-family: 'Bayon';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .card_in_basket_price {
+    display: flex;
+    align-items: center;
+
+    .p {
+      font-family: 'Bayon';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+}
+
+// Favorite
+
+.card_in_basket_text_favorite {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+  padding: 0 32px;
+
+  .card_in_basket_text_information_favorite {
+    font-family: 'Helios';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a8a8a8;
+  }
+
+  .card_in_basket_text_price_favorite {
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #313037;
+  }
+}
+
+@media (max-width: 565px) {
+  .card_in_basket {
+    flex-direction: column;
+    max-height: none;
+    .card_in_basket_img {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card_in_basket_text_favorite {
+      width: 100%;
+      padding: 0;
+    }
+
+    .card_in_basket_text_icon {
+      justify-content: center;
+    }
+  }
+}

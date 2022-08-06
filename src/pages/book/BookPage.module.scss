@@ -1,0 +1,17 @@
+.similar_books {
+  margin-bottom: 72px;
+
+  .h4 {
+    text-transform: uppercase;
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .similar_books_row {
+    display: flex;
+    flex-direction: row;
+  }
+}

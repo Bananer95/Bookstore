@@ -1,9 +1,10 @@
 import React from 'react';
+import s from './Navigation.module.scss';
 
 const Navigation = () => {
   return (
     <>
-      <div className="header_navigation">
+      <div className={s.header_navigation}>
         <a href="#">
           <svg
             width="56"

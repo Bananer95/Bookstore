@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .header_navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+}

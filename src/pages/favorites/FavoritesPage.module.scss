@@ -1,0 +1,36 @@
+.favorite_book_popular {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.h3 {
+  font-family: 'Bayon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  color: #313037;
+}
+
+.h4 {
+  font-family: 'Bayon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: #313037;
+}
+
+@media (max-width: 768px) {
+  .h3 {
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .h3 {
+    margin: 15px 0;
+  }
+}
