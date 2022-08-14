@@ -114,11 +114,73 @@
   }
 }
 
+@media (max-width: 768px) {
+  .card_in_basket {
+    .card_in_basket_img {
+      & img {
+        max-width: 208px;
+        max-height: 156px;
+      }
+    }
+
+    .card_in_basket_price {
+      align-items: flex-end;
+    }
+
+    .card_in_basket_cancel {
+      align-items: flex-start;
+      margin: 0px 15px 0px 0px;
+      max-height: 70px;
+
+      & svg {
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
 @media (max-width: 565px) {
   .card_in_basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     flex-direction: column;
     max-height: none;
+    margin-top: 20px;
+    padding-bottom: 10px;
+
+    .card_in_basket_price {
+      justify-content: center;
+
+      .p {
+        margin: 0;
+        font-size: 24px;
+      }
+    }
+
+    .card_in_basket_text {
+      width: 90%;
+      padding: 0px;
+
+      .card_in_basket_text_counter {
+        width: 100%;
+
+        & p {
+          margin: 0;
+        }
+      }
+    }
+
+    .card_in_basket_cancel {
+      position: absolute;
+      padding-top: 4px;
+      top: 0;
+      right: 0;
+      background-color: rgba(19, 19, 19, 0.349);
+    }
     .card_in_basket_img {
+      position: relative;
       width: 100%;
       height: 100%;
       box-sizing: border-box;

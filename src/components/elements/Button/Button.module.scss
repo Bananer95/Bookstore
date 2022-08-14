@@ -12,3 +12,10 @@
 .button:active {
   background-color: #313037d9;
 }
+
+@media (max-width: 568px) {
+  .button {
+    width: 100%;
+    padding: 20px 0;
+  }
+}

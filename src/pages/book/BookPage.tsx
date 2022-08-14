@@ -34,7 +34,7 @@ const BookPage = () => {
       <div className={s.similar_books}>
         <h4 className={s.h4}>Similar Books</h4>
         <div className={s.similar_books_row}>
-          {threeBook.map((book) => {
+          {oneBook.map((book) => {
             return (
               <Cards
                 img={book.img}
