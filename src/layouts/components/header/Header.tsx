@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navigation } from '../../../components/elements/navigation';
 import { Search } from '../../../components/elements/Search';
 import s from './Header.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -13,7 +14,10 @@ const Header = () => {
   return (
     <>
       <div className={s.header}>
-        <h2 className={s.h2}>BookStore</h2>
+        <Link to={'/'} className={s.h2}>
+          <h2 className={s.h2}>BookStore</h2>
+        </Link>
+
         {!menu ? (
           <>
             <div className={s.header_content}>

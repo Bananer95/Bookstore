@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import s from './Navigation.module.scss';
 
 const Navigation = () => {
   return (
     <>
       <div className={s.header_navigation}>
-        <a href="#">
+        <Link to={'/favorite'}>
           <svg
             width="56"
             height="56"
@@ -21,8 +22,8 @@ const Navigation = () => {
               stroke-linejoin="round"
             />
           </svg>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to={'/cart'}>
           <svg
             width="56"
             height="56"
@@ -45,7 +46,7 @@ const Navigation = () => {
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </Link>
         <a href="#">
           <svg
             width="56"
